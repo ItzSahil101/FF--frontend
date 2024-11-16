@@ -1,0 +1,172 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Main Container */
+  .main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Banner Section */
+  .banner img {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  /* Game Selection */
+  .gs {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .gs h2 {
+    font-size: 24px;
+    color: #4caf50;
+  }
+  
+  .gs img {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  /* Main Content */
+  .mainC img {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  .mainC h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  /* Form Styling */
+  form {
+    width: 450px;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    width: 80%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Box Selection */
+  .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .box {
+    width: 120px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .box:hover {
+    background-color: #e0e0e0;
+    border-color: #bbb;
+  }
+  
+  .box.selected {
+    background-color: #4caf50;
+    color: #fff;
+    border-color: #4caf50;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .box {
+      width: 80px;
+      height: 80px;
+      font-size: 16px;
+    }
+  
+    .gs img {
+      width: 100px;
+    }
+  
+    form {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .box {
+      width: 60px;
+      height: 60px;
+      font-size: 14px;
+    }
+  
+    .gs img {
+      width: 80px;
+    }
+  
+    form {
+      padding: 10px;
+    }
+  
+    form input,
+    form button {
+      padding: 8px;
+    }
+  }
